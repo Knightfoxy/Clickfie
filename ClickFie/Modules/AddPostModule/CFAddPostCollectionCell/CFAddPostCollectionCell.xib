@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CFAddPostCollectionCell" reuseIdentifier="CFAddPostCollectionCell" id="gTV-IL-0wX" customClass="CFAddPostCollectionCell" customModule="ClickFie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="295"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="457" height="295"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UuV-rd-Z9L">
+                        <rect key="frame" x="0.0" y="0.0" width="457" height="295"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addPostPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="G2H-J8-ORw">
+                                <rect key="frame" x="0.0" y="0.0" width="457" height="295"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbb-GP-0L0">
+                                <rect key="frame" x="404" y="18" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="39X-Gh-sqh"/>
+                                    <constraint firstAttribute="height" constant="30" id="GgW-Uo-nbx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="crossImage" title="" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" red="0.97254908080000002" green="0.97254908080000002" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G2H-J8-ORw" firstAttribute="top" secondItem="UuV-rd-Z9L" secondAttribute="top" id="7Vo-Rp-FTq"/>
+                            <constraint firstItem="fbb-GP-0L0" firstAttribute="top" secondItem="UuV-rd-Z9L" secondAttribute="top" constant="18" id="CK9-RQ-6r0"/>
+                            <constraint firstAttribute="bottom" secondItem="G2H-J8-ORw" secondAttribute="bottom" id="HbR-Bx-EUM"/>
+                            <constraint firstAttribute="trailing" secondItem="G2H-J8-ORw" secondAttribute="trailing" id="cTI-3P-Ui5"/>
+                            <constraint firstAttribute="trailing" secondItem="fbb-GP-0L0" secondAttribute="trailing" constant="23" id="mfn-OX-9Pb"/>
+                            <constraint firstItem="G2H-J8-ORw" firstAttribute="leading" secondItem="UuV-rd-Z9L" secondAttribute="leading" id="rKI-aU-Q5m"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="UuV-rd-Z9L" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="85i-17-ppr"/>
+                <constraint firstAttribute="trailing" secondItem="UuV-rd-Z9L" secondAttribute="trailing" id="Hdi-k1-yDs"/>
+                <constraint firstItem="UuV-rd-Z9L" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JeR-KR-7WK"/>
+                <constraint firstAttribute="bottom" secondItem="UuV-rd-Z9L" secondAttribute="bottom" id="Y3n-OW-B5r"/>
+            </constraints>
+            <size key="customSize" width="660" height="665"/>
+            <connections>
+                <outlet property="deleteBtnCell" destination="fbb-GP-0L0" id="O2C-LP-R4h"/>
+                <outlet property="postPicsImageView" destination="G2H-J8-ORw" id="WDv-wf-jlC"/>
+            </connections>
+            <point key="canvasLocation" x="-21.014492753623191" y="-7.03125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addPostPlaceholder" width="50" height="50"/>
+        <image name="crossImage" width="15.5" height="15.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
